@@ -1,25 +1,26 @@
-import {BrowserModule} from "@angular/platform-browser";
-import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
-import {HttpModule} from "@angular/http";
-import {AppComponent} from "./app.component";
-import {BannerHeadComponent} from "./banner-head/banner-head.component";
-import {AppRouteModule} from "./app-routing.module";
-import {ProjectItemComponent} from "./project-item/project-item.component";
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {AppComponent} from './app.component';
+import {AppRouteModule} from './app.routes';
+import {AppService} from './app.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DataListModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    BannerHeadComponent,
-    ProjectItemComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRouteModule
+    AppRouteModule,
+    BrowserAnimationsModule,
+    DataListModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

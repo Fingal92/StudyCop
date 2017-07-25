@@ -1,0 +1,12 @@
+<div class="app-plans">
+  <div class="plans-tab-menu">
+    <p-tabMenu [model]="items" (click)="setTabMenuStyle()"></p-tabMenu>
+  </div>
+  <div class="plans-panel" *ngIf="tabIndex === 0">
+    <app-cards></app-cards>
+  </div>
+  <div class="plans-Schedule" *ngIf="tabIndex === 2">
+    <p-schedule [events]="events"></p-schedule>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+<div class="app-suggest">
+  <p-panel>
+    <p-header>
+      <div class="ui-helper-clearfix">
+        <span class="ui-panel-title" style="font-size:16px;display:inline-block;margin-top:2px">全部留言</span>
+        <p-splitButton [style]="{'float':'right'}" label="Save" icon="fa-check" (onClick)="save()" [model]="items"></p-splitButton>
+      </div>
+    </p-header>
+    <div class="suggest-body">
+      <ul class="suggest-container">
+        <li class="suggest-item" *ngFor="let item of suggests">
+          {{item.detail}}
+        </li>
+      </ul>
+    </div>
+    <p-footer>
+      <button pButton type="button" icon="fa-plus" label="New" class="ui-button-info"></button>
+      <button pButton type="button" icon="fa-list" label="View" class="ui-button-success"></button>
+      <div class="suggests-paginator" style="display: inline-block; width: 992px;">
+        <p-paginator rows="10" totalRecords="120" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
+      </div>
+    </p-footer>
+  </p-panel>
+</div>
+

@@ -1,0 +1,241 @@
+.body-main {
+  .program-banner {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    position: relative;
+    .relative {
+      position: relative;
+      z-index: 1;
+    }
+    .banner-head {
+      z-index: 10;
+      & > div {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+      }
+      & > div.active {
+        display: block;
+      }
+      .tit {
+        font-size: 36px;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+        text-shadow: 0px 4px 8px rgba(7, 17, 27, 0.4);
+        letter-spacing: 10px;
+        margin-bottom: 16px;
+      }
+      .intro {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        font-weight: 200;
+        color: #fff;
+        width: 880px;
+        line-height: 28px;
+        height: 56px;
+        overflow: hidden;
+        text-align: center;
+        text-shadow: 0px 4px 8px rgba(7, 17, 27, 0.4);
+        span {
+          margin: 0 12px;
+        }
+      }
+    }
+    .tab-nav {
+      position: absolute;
+      width: 1104px;
+      height: 120px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0px 8px 16px rgba(7, 17, 27, 0.1);
+      left: 50%;
+      bottom: -60px;
+      margin-left: -552px;
+      padding: 28px 24px 0;
+      z-index: 10;
+      .navitem {
+        float: left;
+        width: 108px;
+        height: 92px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        margin: 0 20px;
+        &.active .navtext {
+          color: #07111b;
+        }
+        &.active .navbot {
+          display: block;
+        }
+        &:hover .navtext {
+          color: #07111b;
+        }
+        &:hover .navicon {
+          margin-top: -4px;
+        }
+        .navicon {
+          display: block;
+          width: 36px;
+          height: 36px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 8px;
+          transition: .1s all linear;
+          margin-top: 0;
+          background-image: url(/assets/img/nav.png);
+          background-size: cover;
+          &.all {
+            background-position: 0 0;
+          }
+          &.fe {
+            background-position: -35px 0;
+          }
+          &.php {
+            background-position: -72px 0;
+          }
+          &.java {
+            background-position: -106px 0;
+          }
+          &.android {
+            background-position: -143px 0;
+          }
+          &.ios {
+            background-position: -180px 0;
+          }
+        }
+        .navtext {
+          font-size: 14px;
+          color: #93999f;
+          line-height: 14px;
+          transition: .3s all linear;
+        }
+        .navbot {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: none;
+          height: 2px;
+          background-color: #f01414;
+          line-height: 0;
+          overflow: hidden;
+        }
+      }
+    }
+    .program-banner-wrap {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      background-color: #1b324a;
+      overflow: hidden;
+      .program-banner-absolute {
+        position: absolute;
+        width: 3174px;
+        height: 2624px;
+        left: 50%;
+        margin-left: -1587px;
+        top: 50%;
+        margin-top: -940px;
+        .program-banner-bk {
+          width: 3174px;
+          height: 2624px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          overflow: hidden;
+          background-position: center 24%;
+          background-size: cover;
+          div {
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+          }
+          .svg-block {
+            position: absolute;
+            width: 848px;
+            height: 848px;
+            left: 0;
+            top: 0;
+            background: url(/assets/img/block.png);
+            z-index: 2;
+          }
+          .svg-diamond {
+            position: absolute;
+            width: 1213px;
+            height: 1213px;
+            left: 215px;
+            top: 190px;
+            background: url(/assets/img/diamond.png);
+            z-index: 3;
+          }
+          .svg-leaf {
+            position: absolute;
+            width: 930px;
+            height: 930px;
+            left: 1060px;
+            top: 450px;
+            background: url(/assets/img/leaf.png);
+            z-index: 2;
+          }
+          .svg-small-circle {
+            position: absolute;
+            width: 864px;
+            height: 864px;
+            right: 478px;
+            top: 336px;
+            background: url(/assets/img/small-circle.png);
+            z-index: 0;
+          }
+          .svg-big-circle {
+            position: absolute;
+            width: 1664px;
+            height: 1664px;
+            right: 811px;
+            top: 956px;
+            background: url(/assets/img/big-circle.png);
+            z-index: 0;
+          }
+          .svg-triangle {
+            position: absolute;
+            width: 1374px;
+            height: 1184px;
+            right: 0px;
+            bottom: 445px;
+            background: url(/assets/img/triangle.png);
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+  .program-list, .activity-profile {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 108px;
+  }
+  .program-list {
+    text-align: center;
+    .program-list-wrap {
+      display: inline-block;
+    }
+  }
+  .app-parts {
+    width: 1200px;
+    margin: 90px auto 0;
+    &::after{
+      content:"";
+      clear:both;
+      display:block;
+    }
+  }
+}

@@ -1,55 +1,51 @@
-/**
- * Created by giscafer on 2017/5/13.
- */
-
 export const  NAVS: any = [
   {
-    "routerUrl": "/all",
+    "routerUrl": "/home",
     "navIcon": "all",
-    "navText": "All",
-    "introTitle": "前端编程之路",
-    "intro": "个人业余在 Github 上开发的部分项目/DEMO，擅长于JavaScript、熟悉Node.js、掌握Java"
+    "navText": "最新动态",
+    "introTitle": "Router11学习研讨会",
+    "intro": "学习学习增长知识，分享分享开拓视野！在这里，每个人都能分享，每个人都能学习，欢迎大家提出需求、发起分亨！"
   },
   {
-    "routerUrl": "/vue",
+    "routerUrl": "/profile",
     "navIcon": "fe",
-    "navText": "Vue.js",
-    "introTitle": "Vue.js 项目",
-    "intro": "vue.js相关项目、demo"
+    "navText": "活动简介",
+    "introTitle": "活动简介",
+    "intro": "关于Router11学习研讨会的活动介绍"
   },
   {
-    "routerUrl": "/angular",
+    "routerUrl": "/plans",
     "navIcon": "php",
-    "navText": "Angular",
-    "introTitle": "Angular 项目",
-    "intro": "Angular 相关项目、demo"
+    "navText": "分享计划",
+    "introTitle": "分享计划",
+    "intro": "分享计划在一个需求被认领或者有人发起分享时建立"
   },
   {
-    "routerUrl": "/react",
+    "routerUrl": "/needs",
     "navIcon": "java",
-    "navText": "React",
-    "introTitle": "React 项目",
-    "intro": "React 相关项目、demo",
+    "navText": "需求列表",
+    "introTitle": "需求列表",
+    "intro": "你可以根据你想学习、想了解的东西，提出自己的需求",
   },
   {
-    "routerUrl": "/nodejs",
+    "routerUrl": "/resource",
     "navIcon": "ios",
-    "navText": "Node.js",
-    "introTitle": "Node.js 项目",
-    "intro": "Node.js 相关项目、demo、NPM插件",
+    "navText": "学习资源",
+    "introTitle": "学习资源",
+    "intro": "这里不仅有以往相关培训资料还有大量优质的学习资源和干货",
   },
   {
-    "routerUrl": "/app",
+    "routerUrl": "/about",
     "navIcon": "android",
-    "navText": "App",
-    "introTitle": "App 项目",
-    "intro": "App 相关项目、demo。工作上开发App使用过的技术有：Ionic、NativeScript，业余开发学习用过RN，个人博客也有分享关于APP开发的技术文章"
+    "navText": "活动剪影",
+    "introTitle": "活动剪影",
+    "intro": "我们是努力奋斗好学上进的团队，快来看看我们的风采吧"
   },
   {
-    "routerUrl": "/other",
+    "routerUrl": "/suggest",
     "navIcon": "fe",
-    "navText": "Other",
-    "introTitle": "其他项目",
-    "intro": "微信公众号/微信小程序开发、Java开发、其他非框架技术开发Demo"
+    "navText": "发表留言",
+    "introTitle": "发表留言",
+    "intro": "你可以在这里发表留言，提出自已的意见和建议"
   }
 ];
